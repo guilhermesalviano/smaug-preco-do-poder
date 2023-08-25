@@ -6,6 +6,7 @@
 define srBelmond = Character("sr. Belmond")
 define samuel = Character("Samuel")
 define oliverHarte = Character("Oliver Harte")
+define newspaperDelivery = Character("Entregador de Jornal")
 
 
 # The game starts here.
@@ -54,6 +55,34 @@ label start:
     oliverHarte "Cadê o dinheiro que estava aqui ?... Bolso de merda continue me dando dinheiro."
     oliverHarte "Tem muito dinheiro aqui."
     oliverHarte "Ninguém vai se importar se eu..."
+
+    # 4rd Board
+    # 1st Scene
+    oliverHarte "(........................)"
+    oliverHarte "(........................)"
+    oliverHarte "Maldito seja quem quer que tenha ligado a luz?"
+
+    # 2nd Scene
+    oliverHarte "Ah, é você sol! A quanto tempo."
+    oliverHarte "Que dor, minha cabeça está querendo cair do lugar."
+    oliverHarte "Tentarei me livrar dela assim que encontrar qualquer um que pareça precisar de um cérebro novo."
+    oliverHarte "E claro, se aceita-lo de ressaca."
+
+    # 3rd Scene
+    oliverHarte "Que bagunça é essa?"
+    oliverHarte "Pessoas sendo pessoas, o que diabos estão tentando pegar ali."
+    oliverHarte "Parece papel, deve ser o “Eco” de hoje."
+    oliverHarte "Tão cedo,... Aliás, que horas são?"
+    oliverHarte "Preciso comer."
+    oliverHarte "Cadê todo meu dinheiro... FUI ROUBADO!!! Ou será que não?"
+    oliverHarte "Não me lembro, mas esse bolso deveria estar cheio de dinheiro, meu aluguel iria ser pago com ele."
+    oliverHarte "Passarei no jornal para pegar o restante e poder voltar para casa sem aquele senhorio idiota para me encher."
+
+    # 4th Board
+    # 1st Scene
+    newspaperDelivery "Extra!!!! Belmond Preso..."
+    oliverHarte "Como é senhores... Me de isso aqui..."
+    oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
 
     # This ends the game.
 
