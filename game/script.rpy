@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define srBelmond = Character("sr. Belmond")
+define srBelmond = Character("", kind=bubble, image="sylvie")
 define samuel = Character("Samuel")
 define oliverHarte = Character("Oliver Harte")
 define newspaperDelivery = Character("Entregador de Jornal")
@@ -17,8 +17,6 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
-
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
@@ -27,9 +25,12 @@ label start:
 
     # 1st Board
     # 1st Scene
+    # show sylvie green surprised
+    scene story board_01
+    with fade
     srBelmond "Essa cidade já foi um lugar bom para morar, saudades daquela época..."
-
     samuel "Senhor Belmond... Oliver Harte deixou uma entrega destinada ao senhor, Gostaria que deixasse na sua mesa?"
+    # hide sylvie green surprised
 
     srBelmond "Deixe e saia."
 
@@ -44,6 +45,8 @@ label start:
 
     # 3rd Board
     # 1st Scene
+    scene story board_03
+    with fade
     oliverHarte "Um merecido descanso para um bom cidadão..."
     oliverHarte "Nada mais que o merecido... Afinal de contas."
 
@@ -58,6 +61,8 @@ label start:
 
     # 4rd Board
     # 1st Scene
+    scene story board_04
+    with fade
     oliverHarte "(........................)"
     oliverHarte "(........................)"
     oliverHarte "Maldito seja quem quer que tenha ligado a luz?"
@@ -78,8 +83,7 @@ label start:
     oliverHarte "Não me lembro, mas esse bolso deveria estar cheio de dinheiro, meu aluguel iria ser pago com ele."
     oliverHarte "Passarei no jornal para pegar o restante e poder voltar para casa sem aquele senhorio idiota para me encher."
 
-    # 4th Board
-    # 1st Scene
+    # 4rd Scene
     newspaperDelivery "Extra!!!! Belmond Preso..."
     oliverHarte "Como é senhores... Me de isso aqui..."
     oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
