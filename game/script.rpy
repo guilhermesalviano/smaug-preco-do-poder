@@ -1,4 +1,10 @@
-﻿# The script of the game goes in this file.
+﻿init python:
+    comemoration = False
+    whichOne = False
+    whatTheyWanted = False
+    talkAboutGoodThings = False
+
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -6,6 +12,7 @@
 define srBelmond = Character("", kind=bubble, image="sylvie")
 define samuel = Character("Samuel")
 define oliverHarte = Character("Oliver Harte")
+define mike = Character("Mike")
 define newspaperDelivery = Character("Entregador de Jornal")
 
 
@@ -42,6 +49,51 @@ label start:
     srBelmond "Eu costumava ser feliz com minha família... e agora tenho que lidar com esses políticos e gangsters de merda..."
     srBelmond "Só espero estar errado."
     srBelmond "Traidora!!!! Aquela vadia vai me pagar por isso."
+
+    # 2rd Board
+    # 1st Scene
+    scene story board_02
+    with fade
+    oliverHarte "Boa noite meu querido Mike."
+    mike "Se fosse querido teria me pago suas dividas, detetive."
+    mike "O que vai querer?"
+    oliverHarte "O de sempre, e adicione um pouco de animo na sua cara."
+    
+    menu:
+        "Vamos comemorar hoje.":
+            $comemoration = True
+        "Muito movimento hoje?":
+            $comemoration = False
+    
+    if comemoration == True:
+        mike "Comemoraremos o quê mesmo?"
+    else:
+        mike "Nem tanto, os malditos Marlones vieram aqui mais cedo."
+        menu:
+            "Qual deles?":
+                $whichOne = True
+                mike "O mais novo, acho que seu nome é Raul."
+                oliverHarte "Oquê eles queriam?"
+                mike "Comprar o Bar, Aparentemente eles estão interessados por ser um local bem localizado."
+                oliverHarte "Ignore eles, vamos falar de coisa boa."
+            "Oquê eles queriam?":
+                $whatTheyWanted = True
+                mike "Comprar o Bar, Aparentemente eles estão interessados por ser um local bem localizado."
+                oliverHarte "Ignore eles, vamos falar de coisa boa."
+            "Ignore eles, vamos falar de coisa boa.":
+                $talkAboutGoodThings = True
+
+    oliverHarte "Resolvi mais um caso, e vou receber uma grana preta amanhã. Vamos sair essa noite."
+
+    mike "Sair? Você sabe que sou casado, e se não voltar para casa na hora, apareço no Eco na seção de homicídios."
+
+    oliverHarte "Falando em Eco, descobri que a mulher do Belmond estava saindo com o Terry."
+
+    mike "O açougueiro? Com aquele Terry?"
+
+    oliverHarte "Uhum, um maldito açougueiro."
+
+    oliverHarte "Uma pena que você não vir, mas vou indo nessa fica com o troco."
 
     # 3rd Board
     # 1st Scene
