@@ -19,12 +19,21 @@ define newspaperDelivery = Character("Entregador de Jornal")
 # The game starts here.
 
 label start:
+    label prologue:
+        scene black_background
+        with fade
+        show text "{size=75}{color=#ffffff}Prólogo{/size}" at truecenter
+        with dissolve
+        pause 2.0
+        hide text
+        with dissolve
+
     label scenario1:
         #show eileen happy
+        # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
         scene story board_01
         with fade
-        # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
-        srBelmond "{font=Not-my-Type.otf}fonte para os jornais{/font}"
+        # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
         srBelmond "Essa cidade já foi um lugar bom para morar, saudades daquela época..."
         samuel "Senhor Belmond... Oliver Harte deixou uma entrega destinada ao senhor, Gostaria que deixasse na sua mesa?"
         # hide sylvie green surprised
