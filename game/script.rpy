@@ -15,9 +15,7 @@ define oliverHarte = Character("Oliver Harte")
 define mike = Character("Mike")
 define newspaperDelivery = Character("Entregador de Jornal")
 
-
 # The game starts here.
-
 label start:
     label prologue:
         scene black_background
@@ -31,9 +29,11 @@ label start:
     label scenario1:
         #show eileen happy
         # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
-        scene story board_01
-        with fade
+        scene story board_01 with fade
         # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
+        show text "Cidade de Helden" at top with dissolve
+        pause 1.5
+        hide text with dissolve
         srBelmond "Essa cidade já foi um lugar bom para morar, saudades daquela época..."
         samuel "Senhor Belmond... Oliver Harte deixou uma entrega destinada ao senhor, Gostaria que deixasse na sua mesa?"
         # hide sylvie green surprised
@@ -45,25 +45,21 @@ label start:
 
         srBelmond "Eu costumava ser feliz com minha família... e agora tenho que lidar com esses políticos e gangsters de merda..."
         srBelmond "Só espero estar errado."
-        srBelmond "Traidora!!!! Aquela vadia vai me pagar por isso."
+        srBelmond "Traidora!{w=0.5}!{w=0.5}!{w=0.8} A{w=0.05}q{w=0.05}u{w=0.05}e{w=0.05}l{w=0.05}a {w=0.05}v{w=0.05}a{w=0.05}d{w=0.05}i{w=0.05}a{w=0.05} {w=0.05}v{w=0.05}a{w=0.05}i {w=0.05}m{w=0.05}e {w=0.05}p{w=0.05}a{w=0.05}g{w=0.05}a{w=0.05}r {w=0.05}p{w=0.05}o{w=0.05}r {w=0.05}i{w=0.05}s{w=0.05}s{w=0.05}o{w=0.05}."
 
     label scenario2:
-        scene story board_02
-        with fade
+        scene story board_02 with fade
         oliverHarte "Boa noite meu querido Mike."
 
-        scene story board_03
-        with fade
+        scene story board_03 with fade
         mike "Se fosse querido teria me pago suas dividas, detetive."
         mike "O que vai querer?"
         oliverHarte "O de sempre, e adicione um pouco de animo na sua cara."
 
-        scene story board_04
-        with fade
+        scene story board_04 with fade
         pause 2.0
         
-        scene story board_05
-        with fade
+        scene story board_05 with fade
         
         menu:
             "Vamos comemorar hoje.":
@@ -102,8 +98,7 @@ label start:
         oliverHarte "Uma pena que você não vir, mas vou indo nessa fica com o troco."
 
     label scenario3:
-        scene story board_06
-        with fade
+        scene story board_06 with fade
         oliverHarte "Um merecido descanso para um bom cidadão..."
         oliverHarte "Nada mais que o merecido... Afinal de contas."
 
@@ -115,21 +110,18 @@ label start:
         oliverHarte "Ninguém vai se importar se eu..."
 
     label scenario4:
-        scene story board_07
-        with fade
-        oliverHarte "(........................)"
+        scene story board_07 with fade
+        oliverHarte "{w=0.3}.{w=1}.{w=1}.{w=0.3}"
 
-        scene story board_08
-        with fade
-        oliverHarte "(........................)"
+        scene story board_08 with fade
+        oliverHarte "{w=0.3}.{w=1}.{w=1}.{w=0.3}"
         oliverHarte "Maldito seja quem quer que tenha ligado a luz?"
         oliverHarte "Ah, é você sol! A quanto tempo."
         oliverHarte "Que dor, minha cabeça está querendo cair do lugar."
         oliverHarte "Tentarei me livrar dela assim que encontrar qualquer um que pareça precisar de um cérebro novo."
         oliverHarte "E claro, se aceita-lo de ressaca."
 
-        scene story board_09
-        with fade
+        scene story board_09 with fade
         oliverHarte "Que bagunça é essa?"
         oliverHarte "Pessoas sendo pessoas, o que diabos estão tentando pegar ali."
         oliverHarte "Parece papel, deve ser o “Eco” de hoje."

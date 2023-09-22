@@ -1,1 +1,1 @@
-# smaug2-sem-nome
+# Preço do poder

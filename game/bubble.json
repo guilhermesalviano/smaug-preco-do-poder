@@ -1,4 +1,13 @@
 {
+    "scenario1_1a293d26": {
+        "area": [
+            1040,
+            180,
+            640,
+            225
+        ],
+        "properties": "top_left"
+    },
     "start_1a293d26": {
         "area": [
             1040,

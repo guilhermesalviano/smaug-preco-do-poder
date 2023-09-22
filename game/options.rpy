@@ -12,7 +12,7 @@
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
 
-define config.name = _("Smaug2")
+define config.name = _("Preço do poder")
 
 
 ## Determina se o título fornecido acima será mostrado na tela do menu
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## construída. Ele deve ser somente ASCII e não deve conter espaços, dois pontos
 ## ou ponto e vírgula.
 
-define build.name = "Smaug2"
+define build.name = "preco_do_poder"
 
 
 ## Sons e música ###############################################################
@@ -145,7 +145,7 @@ default preferences.afm_time = 15
 ## Isso geralmente não deve ser alterado e, se for, deve ser sempre uma string
 ## literal, não uma expressão.
 
-define config.save_directory = "Smaug2-1692911926"
+define config.save_directory = "preco_do_poder-1692911926"
 
 
 ## Ícone #######################################################################
