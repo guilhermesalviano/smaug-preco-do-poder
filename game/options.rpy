@@ -12,7 +12,7 @@
 ##
 ## O _() ao redor da string a marca como elegível para tradução.
 
-define config.name = _("Preço do poder")
+define config.name = _("Preço do poderaa")
 
 
 ## Determina se o título fornecido acima será mostrado na tela do menu
