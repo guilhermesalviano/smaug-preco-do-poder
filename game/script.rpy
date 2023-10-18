@@ -17,6 +17,7 @@ define newspaperDelivery = Character("Entregador de Jornal")
 
 # The game starts here.
 label start:
+    play sound "background-music.mp3" loop
     label prologue:
         scene black_background
         with fade
