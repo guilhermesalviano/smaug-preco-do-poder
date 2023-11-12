@@ -15,3 +15,5 @@ files.txt
 game/cache/bytecode-39.rpyb
 game/cache/screens.rpyb
 game/cache/shaders.txt
+
+progressive_download.txt 

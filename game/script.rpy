@@ -10,6 +10,7 @@
 # name of the character.
 
 define srBelmond = Character("", kind=bubble, image="sylvie")
+define noOne = Character("")
 define samuel = Character("Samuel")
 define oliverHarte = Character("Oliver Harte")
 define mike = Character("Mike")
@@ -44,8 +45,10 @@ label start:
         srBelmond "Esse detetive zomba de mim, mandou esse fotografo me entregar o serviço."
         srBelmond "Imprestável."
 
-        srBelmond "Eu costumava ser feliz com minha família... e agora tenho que lidar com esses políticos e gangsters de merda..."
-        srBelmond "Só espero estar errado."
+        scene story board_01-02 with fade
+        noOne "Eu costumava ser feliz com minha família... e agora tenho que lidar com esses políticos e gangsters de merda..."
+        noOne "Só espero estar errado."
+        
         srBelmond "Traidora!{w=0.5}!{w=0.5}!{w=0.8} A{w=0.05}q{w=0.05}u{w=0.05}e{w=0.05}l{w=0.05}a {w=0.05}v{w=0.05}a{w=0.05}d{w=0.05}i{w=0.05}a{w=0.05} {w=0.05}v{w=0.05}a{w=0.05}i {w=0.05}m{w=0.05}e {w=0.05}p{w=0.05}a{w=0.05}g{w=0.05}a{w=0.05}r {w=0.05}p{w=0.05}o{w=0.05}r {w=0.05}i{w=0.05}s{w=0.05}s{w=0.05}o{w=0.05}."
 
     label scenario2:
@@ -133,9 +136,13 @@ label start:
         oliverHarte "Passarei no jornal para pegar o restante e poder voltar para casa sem aquele senhorio idiota para me encher."
 
     label scenario5:
+        scene story board_10 with fade
         newspaperDelivery "Extra!!!! Belmond Preso..."
         oliverHarte "Como é senhores... Me de isso aqui..."
         oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
+    
+    label scenario6:
+        scene story board_11 with fade
 
 return
 # This ends the game.
