@@ -31,9 +31,11 @@ label start:
     label scenario1:
         #show eileen happy
         # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
-        scene story board_01 with fade
-        # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
+        scene story board_11 with fade
         show text "Cidade de Helden" at top with dissolve
+        pause 2.5
+        # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
+        scene story board_01 with fade
         pause 1.5
         hide text with dissolve
         srBelmond "Essa cidade já foi um lugar bom para morar, saudades daquela época..."
@@ -48,22 +50,20 @@ label start:
         scene story board_01-02 with fade
         noOne "Eu costumava ser feliz com minha família... e agora tenho que lidar com esses políticos e gangsters de merda..."
         noOne "Só espero estar errado."
+        play sound "paper-sound.mp3"
+        scene story board_01-02 with fade
         
         srBelmond "Traidora!{w=0.5}!{w=0.5}!{w=0.8} A{w=0.05}q{w=0.05}u{w=0.05}e{w=0.05}l{w=0.05}a {w=0.05}v{w=0.05}a{w=0.05}d{w=0.05}i{w=0.05}a{w=0.05} {w=0.05}v{w=0.05}a{w=0.05}i {w=0.05}m{w=0.05}e {w=0.05}p{w=0.05}a{w=0.05}g{w=0.05}a{w=0.05}r {w=0.05}p{w=0.05}o{w=0.05}r {w=0.05}i{w=0.05}s{w=0.05}s{w=0.05}o{w=0.05}."
 
     label scenario2:
-        scene story board_02 with fade
+        #play sound "shop-door-bell.mp3"
+        scene story board_04 with fade
         oliverHarte "Boa noite meu querido Mike."
 
-        scene story board_03 with fade
         mike "Se fosse querido teria me pago suas dividas, detetive."
         mike "O que vai querer?"
         oliverHarte "O de sempre, e adicione um pouco de animo na sua cara."
-
-        scene story board_04 with fade
         pause 2.0
-        
-        scene story board_05 with fade
         
         menu:
             "Vamos comemorar hoje.":
@@ -102,7 +102,6 @@ label start:
         oliverHarte "Uma pena que você não vir, mas vou indo nessa fica com o troco."
 
     label scenario3:
-        scene story board_06 with fade
         oliverHarte "Um merecido descanso para um bom cidadão..."
         oliverHarte "Nada mais que o merecido... Afinal de contas."
 
@@ -142,7 +141,7 @@ label start:
         oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
     
     label scenario6:
-        scene story board_11 with fade
+        
 
 return
 # This ends the game.
