@@ -20,19 +20,17 @@ define newspaperDelivery = Character("Entregador de Jornal")
 label start:
     play sound "background-music.mp3" loop
     label prologue:
-        scene black_background
-        with fade
-        show text "{size=75}{color=#ffffff}Prólogo{/size}" at truecenter
-        with dissolve
+        scene black_background with fade
+        show text "{size=75}{color=#ffffff}Prólogo{/size}" at truecenter with dissolve
         pause 2.0
-        hide text
-        with dissolve
+        hide text with dissolve
 
     label scenario1:
         #show eileen happy
         # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
         scene story board_11 with fade
-        show text "Cidade de Helden" at top with dissolve
+        show text "Cidade de Helden" at left with dissolve
+            
         pause 2.5
         # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
         scene story board_01 with fade
@@ -53,10 +51,9 @@ label start:
         play sound "paper-sound.mp3"
         scene story board_01-02 with fade
         
-        srBelmond "Traidora!{w=0.5}!{w=0.5}!{w=0.8} A{w=0.05}q{w=0.05}u{w=0.05}e{w=0.05}l{w=0.05}a {w=0.05}v{w=0.05}a{w=0.05}d{w=0.05}i{w=0.05}a{w=0.05} {w=0.05}v{w=0.05}a{w=0.05}i {w=0.05}m{w=0.05}e {w=0.05}p{w=0.05}a{w=0.05}g{w=0.05}a{w=0.05}r {w=0.05}p{w=0.05}o{w=0.05}r {w=0.05}i{w=0.05}s{w=0.05}s{w=0.05}o{w=0.05}."
+        noOne "Traidora!{w=0.5}!{w=0.5}!{w=0.8} A{w=0.05}q{w=0.05}u{w=0.05}e{w=0.05}l{w=0.05}a {w=0.05}v{w=0.05}a{w=0.05}d{w=0.05}i{w=0.05}a{w=0.05} {w=0.05}v{w=0.05}a{w=0.05}i {w=0.05}m{w=0.05}e {w=0.05}p{w=0.05}a{w=0.05}g{w=0.05}a{w=0.05}r {w=0.05}p{w=0.05}o{w=0.05}r {w=0.05}i{w=0.05}s{w=0.05}s{w=0.05}o{w=0.05}."
 
     label scenario2:
-        #play sound "shop-door-bell.mp3"
         scene story board_04 with fade
         oliverHarte "Boa noite meu querido Mike."
 
