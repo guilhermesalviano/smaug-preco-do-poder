@@ -29,7 +29,7 @@ label start:
         #show eileen happy
         # {size=50} {b} {color=#ffffff} {space=75} {fast} {p} 
         scene story board_11 with fade
-        show text "Cidade de Helden" at left with dissolve
+        show text "{color=#ffffff}Cidade de Helden" at left with dissolve
             
         pause 2.5
         # srBelmond "{font=Not-my-Type.otf}teste de fonte: ã,õ,á,é,ó,í,â,ô,ç{/font}"
@@ -37,6 +37,7 @@ label start:
         pause 1.5
         hide text with dissolve
         srBelmond "Essa cidade já foi um lugar bom para morar, saudades daquela época..."
+        scene story board_prologue with fade
         samuel "Senhor Belmond... Oliver Harte deixou uma entrega destinada ao senhor, Gostaria que deixasse na sua mesa?"
         # hide sylvie green surprised
 
@@ -60,7 +61,6 @@ label start:
         mike "Se fosse querido teria me pago suas dividas, detetive."
         mike "O que vai querer?"
         oliverHarte "O de sempre, e adicione um pouco de animo na sua cara."
-        pause 2.0
         
         menu:
             "Vamos comemorar hoje.":
@@ -133,7 +133,8 @@ label start:
 
     label scenario5:
         scene story board_10 with fade
-        newspaperDelivery "Extra!!!! Belmond Preso..."
+        newspaperDelivery "Extra!!! Extra!!! "
+        newspaperDelivery "Belmond Preso..."
         oliverHarte "Como é senhores... Me de isso aqui..."
         oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
     
