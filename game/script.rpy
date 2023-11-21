@@ -110,12 +110,16 @@ label start:
         oliverHarte "Ninguém vai se importar se eu..."
 
     label scenario4:
+        scene darkness with fade
+        pause 2.0
+        oliverHarte "{w=0.3}.{w=1}.{w=1}.{w=0.3}"
         scene story board_07 with fade
         oliverHarte "{w=0.3}.{w=1}.{w=1}.{w=0.3}"
 
+        scene darkness with fade
         scene story board_08 with fade
-        oliverHarte "{w=0.3}.{w=1}.{w=1}.{w=0.3}"
-        oliverHarte "Maldito seja quem quer que tenha ligado a luz?"
+        pause 0.8
+        oliverHarte "Maldito seja quem quer é que tenha ligado a luz?"
         oliverHarte "Ah, é você sol! A quanto tempo."
         oliverHarte "Que dor, minha cabeça está querendo cair do lugar."
         oliverHarte "Tentarei me livrar dela assim que encontrar qualquer um que pareça precisar de um cérebro novo."
@@ -125,7 +129,7 @@ label start:
         oliverHarte "Que bagunça é essa?"
         oliverHarte "Pessoas sendo pessoas, o que diabos estão tentando pegar ali."
         oliverHarte "Parece papel, deve ser o “Eco” de hoje."
-        oliverHarte "Tão cedo,... Aliás, que horas são?"
+        oliverHarte "Tão cedo... Aliás, que horas são?"
         oliverHarte "Preciso comer."
         oliverHarte "Cadê todo meu dinheiro... FUI ROUBADO!!! Ou será que não?"
         oliverHarte "Não me lembro, mas esse bolso deveria estar cheio de dinheiro, meu aluguel iria ser pago com ele."

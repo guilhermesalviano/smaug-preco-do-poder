@@ -8,6 +8,31 @@
         ],
         "properties": "top_left"
     },
+    "scenario1_5971a35b": {
+        "area": [
+            640,
+            540,
+            400,
+            135
+        ]
+    },
+    "scenario1_b545d15c": {
+        "area": [
+            640,
+            540,
+            400,
+            135
+        ],
+        "properties": "top_left"
+    },
+    "scenario1_c54e81ab": {
+        "area": [
+            640,
+            540,
+            560,
+            225
+        ]
+    },
     "start_1a293d26": {
         "area": [
             1040,
