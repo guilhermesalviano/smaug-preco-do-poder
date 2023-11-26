@@ -18,7 +18,7 @@ define newspaperDelivery = Character("Entregador de Jornal")
 
 # The game starts here.
 label start:
-    play sound "background-music.mp3" loop
+    play music "background-music.mp3" loop
     label prologue:
         scene black_background with fade
         show text "{size=75}{color=#ffffff}Prólogo{/size}" at truecenter with dissolve
@@ -137,7 +137,7 @@ label start:
 
     label scenario5:
         scene story board_10 with fade
-        newspaperDelivery "Extra!!! Extra!!! "
+        newspaperDelivery "Extra!!! {w=0.6}Extra!!!"
         newspaperDelivery "Belmond Preso..."
         oliverHarte "Como é senhores... Me de isso aqui..."
         oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
