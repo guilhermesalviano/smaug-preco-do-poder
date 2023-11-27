@@ -142,8 +142,9 @@ label start:
         oliverHarte "Como é senhores... Me de isso aqui..."
         oliverHarte "Gordo idiota, se te pego quem vai para manchete sou eu."
     
-    label scenario6:
-        
+    scene black_background with fade
+    show text "{size=75}{color=#ffffff}Continua...{/size}" at truecenter with dissolve
+    pause 2.0
 
 return
 # This ends the game.
